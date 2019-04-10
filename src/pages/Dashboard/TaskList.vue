@@ -20,13 +20,14 @@
 </template>
 <script>
   import {BaseTable} from '@/components'
+
   export default {
     components: {
       BaseTable
     },
     computed: {
       tableData() {
-        return this.$t('dashboard.taskList');
+        return this.$t('bashPrompt.taskList');
       }
     }
   }

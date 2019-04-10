@@ -7,8 +7,8 @@
           <template slot="header">
             <div class="row">
               <div class="col-sm-6" :class="isRTL ? 'text-right' : 'text-left'">
-                <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
-                <h2 class="card-title">{{$t('dashboard.performance')}}</h2>
+                <h5 class="card-category">{{$t('bashPrompt.totalShipments')}}</h5>
+                <h2 class="card-title">{{$t('bashPrompt.performance')}}</h2>
               </div>
               <div class="col-sm-6">
                 <div class="btn-group btn-group-toggle"
@@ -46,17 +46,17 @@
       <div class="col-lg-6 col-md-12">
         <card type="tasks" :header-classes="'text-left'">
           <template slot="header">
-            <h6 class="title d-inline">{{$t('dashboard.tasks', {count: 5})}}</h6>
-            <p class="card-category d-inline">{{$t('dashboard.today')}}</p>
+            <h6 class="title d-inline">{{$t('bashPrompt.tasks', {count: 5})}}</h6>
+            <p class="card-category d-inline">{{$t('bashPrompt.today')}}</p>
             <base-dropdown menu-on-right=""
                            tag="div"
                            title-classes="btn btn-link btn-icon"
                            aria-label="Settings menu"
                            :class="'float-right'">
               <i slot="title" class="tim-icons icon-settings-gear-63"></i>
-              <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.action')}}</a>
-              <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.anotherAction')}}</a>
-              <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.somethingElse')}}</a>
+              <a class="dropdown-item" href="#pablo">{{$t('bashPrompt.dropdown.action')}}</a>
+              <a class="dropdown-item" href="#pablo">{{$t('bashPrompt.dropdown.anotherAction')}}</a>
+              <a class="dropdown-item" href="#pablo">{{$t('bashPrompt.dropdown.somethingElse')}}</a>
             </base-dropdown>
           </template>
           <div class="table-full-width table-responsive">
@@ -66,7 +66,7 @@
       </div>
       <div class="col-lg-6 col-md-12">
         <card class="card" :header-classes="'text-right'">
-          <h4 slot="header" class="card-title">{{$t('dashboard.simpleTable')}}</h4>
+          <h4 slot="header" class="card-title">{{$t('bashPrompt.simpleTable')}}</h4>
           <div class="table-responsive">
             <user-table></user-table>
           </div>
@@ -174,11 +174,11 @@
     },
     computed: {
       bigLineChartCategories() {
-        return this.$t('dashboard.chartCategories');
+        return this.$t('bashPrompt.chartCategories');
       }
     },
     methods: {
-      initBigChart(index) {
+      /*initBigChart(index) {
         let chartData = {
           datasets: [{
             fill: true,
@@ -200,11 +200,11 @@
         this.$refs.bigChart.updateGradients(chartData);
         this.bigLineChart.chartData = chartData;
         this.bigLineChart.activeIndex = index;
-      }
+      }*/
     },
     mounted() {
       this.i18n = this.$i18n;
-      this.initBigChart(0);
+      // this.initBigChart(0);
     }
   };
 </script>

@@ -9,7 +9,7 @@ const Notifications = () => import(/* webpackChunkName: "common" */"@/pages/Noti
 const Icons = () => import(/* webpackChunkName: "common" */ "@/pages/Icons.vue");
 const Typography = () => import(/* webpackChunkName: "common" */ "@/pages/Typography.vue");
 const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableList.vue");
-
+// TODO: Name should not be hardcoded.
 const routes = [
   {
     path: "/",
@@ -23,7 +23,7 @@ const routes = [
       },
       {
         path: "profile",
-        name: "profile",
+        name: "about me",
         component: Profile
       },
       {
@@ -33,12 +33,12 @@ const routes = [
       },
       {
         path: "custom-functions",
-        name: "custom-functions",
+        name: "custom functions",
         component: Icons
       },
       {
         path: "more-config",
-        name: "more-config",
+        name: "more config",
         component: Typography
       }
     ]

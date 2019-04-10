@@ -29,14 +29,14 @@
       <collapse-transition>
         <div class="collapse navbar-collapse show" v-show="showMenu">
           <ul class="navbar-nav" :class="'ml-auto'">
-            <div class="search-bar input-group" @click="searchModalVisible = true">
-              <!-- <input type="text" class="form-control" placeholder="Search...">
-              <div class="input-group-addon"><i class="tim-icons icon-zoom-split"></i></div> -->
+            <!--<div class="search-bar input-group" @click="searchModalVisible = true">
+              &lt;!&ndash; <input type="text" class="form-control" placeholder="Search...">
+              <div class="input-group-addon"><i class="tim-icons icon-zoom-split"></i></div> &ndash;&gt;
               <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal">
                 <i class="tim-icons icon-zoom-split"></i>
               </button>
-              <!-- You can choose types of search input -->
-            </div>
+              &lt;!&ndash; You can choose types of search input &ndash;&gt;
+            </div>-->
             <modal :show.sync="searchModalVisible"
                    class="modal-search"
                    id="searchModal"
@@ -70,7 +70,7 @@
                 <a href="#" class="nav-item dropdown-item">Another one</a>
               </li>
             </base-dropdown>
-            <base-dropdown tag="li"
+            <!--<base-dropdown tag="li"
                            :menu-on-right="true"
                            title-tag="a"
                            class="nav-item"
@@ -94,7 +94,7 @@
               <li class="nav-link">
                 <a href="#" class="nav-item dropdown-item">Log out</a>
               </li>
-            </base-dropdown>
+            </base-dropdown>-->
           </ul>
         </div>
       </collapse-transition>

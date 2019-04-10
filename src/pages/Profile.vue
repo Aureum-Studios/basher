@@ -1,8 +1,15 @@
 <template>
   <div class="row">
     <div class="col-md-8">
-      <edit-profile-form :model="model">
-      </edit-profile-form>
+      <card :title="repositoryTable.title">
+        <div class="table-full-width table-responsive">
+          <base-table :title="repositoryTable.title"
+                      :sub-title="repositoryTable.subTitle"
+                      :data="repositoryTable.data"
+                      :columns="repositoryTable.columns">
+          </base-table>
+        </div>
+      </card>
     </div>
     <div class="col-md-4">
       <user-card :user="user"></user-card>
@@ -10,30 +17,78 @@
   </div>
 </template>
 <script>
-  import EditProfileForm from './Profile/EditProfileForm';
+  import {BaseTable} from "@/components";
   import UserCard from './Profile/UserCard'
+
+  const tableColumns = ["Name", "Country", "City", "Salary"];
+  const tableData = [
+    {
+      id: 1,
+      name: "Dakota Rice",
+      salary: "$36.738",
+      country: "Niger",
+      city: "Oud-Turnhout",
+    },
+    {
+      id: 2,
+      name: "Minerva Hooper",
+      salary: "$23,789",
+      country: "Curaçao",
+      city: "Sinaai-Waas"
+    },
+    {
+      id: 3,
+      name: "Sage Rodriguez",
+      salary: "$56,142",
+      country: "Netherlands",
+      city: "Baileux"
+    },
+    {
+      id: 4,
+      name: "Philip Chaney",
+      salary: "$38,735",
+      country: "Korea, South",
+      city: "Overland Park"
+    },
+    {
+      id: 5,
+      name: "Doris Greene",
+      salary: "$63,542",
+      country: "Malawi",
+      city: "Feldkirchen in Kärnten"
+    },
+    {
+      id: 6,
+      name: 'Mason Porter',
+      salary: '$98,615',
+      country: 'Chile',
+      city: 'Gloucester'
+    },
+    {
+      id: 7,
+      name: 'Jon Porter',
+      salary: '$78,615',
+      country: 'Portugal',
+      city: 'Gloucester'
+    }
+  ];
+  //TODO: Removed hardcoded string down here
   export default {
     components: {
-      EditProfileForm,
-      UserCard
+      UserCard,
+      BaseTable
     },
     data() {
       return {
-        model: {
-          company: 'Creative Code Inc.',
-          email: 'mike@email.com',
-          username: 'michael23',
-          firstName: 'Mike',
-          lastName: 'Andrew',
-          address: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
-          city: 'Melbourne',
-          country: 'Australia',
-          about: 'Lamborghini Mercy, Your chick she so thirsty, I\'m in that two seat Lambo.'
-        },
         user: {
-          fullName: 'Mike Andrew',
-          title: 'Ceo/Co-Founder',
-          description: `Do not be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...`,
+          fullName: 'Osniel Quintana',
+          title: 'Software Developer',
+          description: `Develop a passion for learning. Once you do, you'll never cease to grow...`,
+        },
+        repositoryTable: {
+          title: "My Other Repositories",
+          columns: [...tableColumns],
+          data: [...tableData]
         }
       }
     }

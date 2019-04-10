@@ -25,8 +25,9 @@
     </div>
 </template>
 <script>
-import { BaseTable } from "@/components";
-const tableColumns = ["Name", "Country", "City", "Salary"];
+  import {BaseTable} from "@/components";
+
+  const tableColumns = ["Name", "Country", "City", "Salary"];
 const tableData = [
   {
     id: 1,
@@ -90,7 +91,7 @@ export default {
         columns: [...tableColumns],
         data: [...tableData]
       },
-      table2: {
+      repositoryTable: {
         title: "Table on Plain Background",
         columns: [...tableColumns],
         data: [...tableData]

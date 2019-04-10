@@ -8,7 +8,7 @@
       <div class="block block-three"></div>
       <div class="block block-four"></div>
       <a href="#">
-        <img class="avatar" src="img/anime6.png" alt="...">
+        <img class="avatar" src="img/avatar.png" alt="...">
         <h5 class="title">{{user.fullName}}</h5>
       </a>
       <p class="description">
@@ -21,13 +21,24 @@
     </p>
     <div slot="footer" class="button-container">
       <base-button icon round class="btn-facebook">
-        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/osniel.quintana">
+          <i class="fab fa-facebook"></i>
+        </a>
       </base-button>
-      <base-button icon round class="btn-twitter">
-        <i class="fab fa-twitter"></i>
+      <base-button icon round class="btn-linkedin">
+        <a href="https://www.linkedin.com/in/osniel-quintana">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </base-button>
-      <base-button icon round class="btn-google">
-        <i class="fab fa-google-plus"></i>
+      <base-button icon round class="btn-skype">
+        <a href="https://join.skype.com/invite/B7kqMgeXkhlk">
+          <i class="fab fa-skype"></i>
+        </a>
+      </base-button>
+      <base-button icon round class="btn-github">
+        <a href="https://github.com/croxx219">
+          <i class="fab fa-github-alt"></i>
+        </a>
       </base-button>
     </div>
   </card>

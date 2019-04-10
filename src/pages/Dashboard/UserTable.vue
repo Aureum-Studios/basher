@@ -5,14 +5,15 @@
   </base-table>
 </template>
 <script>
-  import { BaseTable } from "@/components";
+  import {BaseTable} from "@/components";
+
   export default {
     components: {
       BaseTable
     },
     computed: {
       table(){
-        return this.$t('dashboard.usersTable');
+        return this.$t('bashPrompt.usersTable');
       }
     }
   }
