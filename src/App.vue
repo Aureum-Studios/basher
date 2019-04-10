@@ -9,9 +9,7 @@
   export default {
     methods: {
       disableRTL() {
-        if (!this.$rtl.isRTL) {
-          this.$rtl.disableRTL();
-        }
+        this.$rtl.disableRTL();
       },
       toggleNavOpen() {
         let root = document.getElementsByTagName('html')[0];

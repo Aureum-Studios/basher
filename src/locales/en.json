@@ -111,15 +111,14 @@
     ]
   },
   "sidebar": {
-    "title": "Creative Tim",
-    "shortTitle": "CT",
+    "title": "Basher.IO",
+    "shortTitle": "BIO",
     "dashboard": "dashboard",
     "icons": "Icons",
     "maps": "Maps",
     "notifications": "Notifications",
-    "userProfile": "User Profile",
+    "userProfile": "About Me",
     "tableList": "Table List",
-    "typography": "Typography",
-    "rtlSupport": "RTL Support"
+    "typography": "Typography"
   }
 }

@@ -44,7 +44,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <card type="tasks" :header-classes="{'text-right': isRTL}">
+        <card type="tasks" :header-classes="'text-left'">
           <template slot="header">
             <h6 class="title d-inline">{{$t('dashboard.tasks', {count: 5})}}</h6>
             <p class="card-category d-inline">{{$t('dashboard.today')}}</p>
@@ -52,7 +52,7 @@
                            tag="div"
                            title-classes="btn btn-link btn-icon"
                            aria-label="Settings menu"
-                           :class="{'float-left': isRTL}">
+                           :class="'float-right'">
               <i slot="title" class="tim-icons icon-settings-gear-63"></i>
               <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.action')}}</a>
               <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.anotherAction')}}</a>
@@ -65,7 +65,7 @@
         </card>
       </div>
       <div class="col-lg-6 col-md-12">
-        <card class="card" :header-classes="{'text-right': isRTL}">
+        <card class="card" :header-classes="'text-right'">
           <h4 slot="header" class="card-title">{{$t('dashboard.simpleTable')}}</h4>
           <div class="table-responsive">
             <user-table></user-table>
@@ -173,12 +173,6 @@
       }
     },
     computed: {
-      enableRTL() {
-        return this.$route.query.enableRTL;
-      },
-      isRTL() {
-        return this.$rtl.isRTL;
-      },
       bigLineChartCategories() {
         return this.$t('dashboard.chartCategories');
       }
@@ -210,17 +204,7 @@
     },
     mounted() {
       this.i18n = this.$i18n;
-      if (this.enableRTL) {
-        this.i18n.locale = 'ar';
-        this.$rtl.enableRTL();
-      }
       this.initBigChart(0);
-    },
-    beforeDestroy() {
-      if (this.$rtl.isRTL) {
-        this.i18n.locale = 'en';
-        this.$rtl.disableRTL();
-      }
     }
   };
 </script>
