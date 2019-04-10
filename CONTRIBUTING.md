@@ -1,6 +1,6 @@
 * Fork the repository
 * Clone it on your PC
-* `npm install` or `yarn install`
+* `npm install` 
 * Make changes, commit open PR
 
 ### Notes
