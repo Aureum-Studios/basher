@@ -8,7 +8,7 @@
     <!-- -->
     <div class="sidebar-wrapper" id="style-3">
       <div class="logo">
-        <a href="http://www.creative-tim.com"
+        <a href="https://github.com/croxx219/basher/tree/master"
            aria-label="sidebar mini logo"
            class="simple-text logo-mini">
           <div class="logo-img"
@@ -18,7 +18,7 @@
               alt="">
           </div>
         </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <a href="https://github.com/croxx219/basher/tree/master" class="simple-text logo-normal">
           {{title}}
         </a>
       </div>
@@ -46,11 +46,11 @@
     props: {
       title: {
         type: String,
-        default: "Creative Tim"
+        default: "Basher.io"
       },
       backgroundColor: {
         type: String,
-        default: "vue"
+        default: "green"
       },
       activeColor: {
         type: String,
