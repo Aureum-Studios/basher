@@ -14,11 +14,11 @@ const routes = [
   {
     path: "/",
     component: DashboardLayout,
-    redirect: "/dashboard",
+    redirect: "/bash-prompt",
     children: [
       {
-        path: "dashboard",
-        name: "dashboard",
+        path: "bash-prompt",
+        name: "Bash Prompt",
         component: Dashboard
       },
       {
@@ -27,24 +27,19 @@ const routes = [
         component: Profile
       },
       {
-        path: "notifications",
-        name: "notifications",
+        path: "aliases",
+        name: "aliases",
         component: Notifications
       },
       {
-        path: "icons",
-        name: "icons",
+        path: "custom-functions",
+        name: "custom-functions",
         component: Icons
       },
       {
-        path: "typography",
-        name: "typography",
+        path: "more-config",
+        name: "more-config",
         component: Typography
-      },
-      {
-        path: "table-list",
-        name: "table-list",
-        component: TableList
       }
     ]
   },

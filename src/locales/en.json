@@ -1,5 +1,5 @@
 {
-  "dashboard": {
+  "bashPrompt": {
     "completedTasks": "Completed Tasks",
     "dailySales": "Daily Sales",
     "performance": "Performance",
@@ -113,12 +113,10 @@
   "sidebar": {
     "title": "Basher.IO",
     "shortTitle": "BIO",
-    "dashboard": "dashboard",
-    "icons": "Icons",
-    "maps": "Maps",
-    "notifications": "Notifications",
-    "userProfile": "About Me",
-    "tableList": "Table List",
-    "typography": "Typography"
+    "bashPrompt": "Bash Prompt",
+    "aliases": "Aliases",
+    "functions": "Custom Functions",
+    "misc": "More Config",
+    "userProfile": "About Me"
   }
 }

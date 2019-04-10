@@ -2,12 +2,11 @@
   <div class="wrapper">
     <side-bar>
       <template slot="links">
-        <sidebar-link to="/dashboard" :name="$t('sidebar.dashboard')" icon="tim-icons icon-chart-pie-36"/>
-        <sidebar-link to="/icons" :name="$t('sidebar.icons')" icon="tim-icons icon-atom"/>
-        <sidebar-link to="/notifications" :name="$t('sidebar.notifications')" icon="tim-icons icon-bell-55"/>
+        <sidebar-link to="/bash-prompt" :name="$t('sidebar.bashPrompt')" icon="tim-icons icon-tv-2"/>
+        <sidebar-link to="/aliases" :name="$t('sidebar.aliases')" icon="tim-icons icon-vector"/>
+        <sidebar-link to="/custom-functions" :name="$t('sidebar.functions')" icon="tim-icons icon-puzzle-10"/>
+        <sidebar-link to="/more-config" :name="$t('sidebar.misc')" icon="tim-icons icon-settings"/>
         <sidebar-link to="/profile" :name="$t('sidebar.userProfile')" icon="tim-icons icon-single-02"/>
-        <sidebar-link to="/table-list" :name="$t('sidebar.tableList')" icon="tim-icons icon-puzzle-10"/>
-        <sidebar-link to="/typography" :name="$t('sidebar.typography')" icon="tim-icons icon-align-center"/>
       </template>
     </side-bar>
     <div class="main-panel">
