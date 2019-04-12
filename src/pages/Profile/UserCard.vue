@@ -16,9 +16,19 @@
       </p>
     </div>
     <p></p>
-    <p class="card-description">
-      {{user.description}}
-    </p>
+    <div>
+      <card type="plain mb-0">
+        <div slot="header" class="card-header-success">
+          Favorite Quote
+        </div>
+        <blockquote class="blockquote mb-0">
+          <p>
+            {{user.description}}
+          </p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </card>
+    </div>
     <div slot="footer" class="button-container">
       <base-button icon round class="btn-facebook">
         <a href="https://www.facebook.com/osniel.quintana">

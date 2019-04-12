@@ -9,7 +9,7 @@ import BaseAlert from "./BaseAlert";
 import BaseNav from "./BaseNav";
 import Modal from "./Modal";
 import CloseButton from "./CloseButton";
-
+import AliasList from "./Aliases/AliasList";
 import Card from "./Cards/Card.vue";
 import StatsCard from "./Cards/StatsCard.vue";
 
@@ -19,6 +19,7 @@ export {
   BaseInput,
   Card,
   Modal,
+  AliasList,
   CloseButton,
   StatsCard,
   BaseTable,

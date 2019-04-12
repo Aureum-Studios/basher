@@ -1,4 +1,8 @@
 {
+  "aliases": {
+    "aliasName": "Alias Name",
+    "command": "Command"
+  },
   "bashPrompt": {
     "completedTasks": "Completed Tasks",
     "dailySales": "Daily Sales",
@@ -11,6 +15,7 @@
       "Sessions"
     ],
     "tasks": "Tasks({count})",
+    "aliases": "Aliases ({count})",
     "today": "Today",
     "dropdown": {
       "action": "Action",

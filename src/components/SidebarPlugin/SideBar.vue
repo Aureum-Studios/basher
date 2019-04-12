@@ -49,7 +49,7 @@
       },
       backgroundColor: {
         type: String,
-        default: "green"
+        default: "primary"
       },
       activeColor: {
         type: String,

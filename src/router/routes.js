@@ -3,11 +3,11 @@ import DashboardLayout from "@/layout/DashboardLayout.vue";
 import NotFound from "@/pages/NotFoundPage.vue";
 
 // Admin pages
-const Dashboard = () => import(/* webpackChunkName: "dashboard" */"@/pages/Dashboard.vue");
+const BashPrompt = () => import(/* webpackChunkName: "dashboard" */"@/pages/BashPrompt.vue");
 const Profile = () => import(/* webpackChunkName: "common" */ "@/pages/Profile.vue");
-const Notifications = () => import(/* webpackChunkName: "common" */"@/pages/Notifications.vue");
-const Icons = () => import(/* webpackChunkName: "common" */ "@/pages/Icons.vue");
-const Typography = () => import(/* webpackChunkName: "common" */ "@/pages/Typography.vue");
+const Aliases = () => import(/* webpackChunkName: "common" */"@/pages/Aliases.vue");
+const CustomFunctions = () => import(/* webpackChunkName: "common" */ "@/pages/CustomFunctions.vue");
+const MoreConfig = () => import(/* webpackChunkName: "common" */ "@/pages/MoreConfig.vue");
 const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableList.vue");
 // TODO: Name should not be hardcoded.
 const routes = [
@@ -19,7 +19,7 @@ const routes = [
       {
         path: "bash-prompt",
         name: "Bash Prompt",
-        component: Dashboard
+        component: BashPrompt
       },
       {
         path: "profile",
@@ -29,17 +29,17 @@ const routes = [
       {
         path: "aliases",
         name: "aliases",
-        component: Notifications
+        component: Aliases
       },
       {
         path: "custom-functions",
         name: "custom functions",
-        component: Icons
+        component: CustomFunctions
       },
       {
         path: "more-config",
         name: "more config",
-        component: Typography
+        component: MoreConfig
       }
     ]
   },
