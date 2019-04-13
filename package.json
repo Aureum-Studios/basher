@@ -2,6 +2,7 @@
   "name": "vue-black-dashboard",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://croxx219.github.io/basher/",
   "description": "A sample admin dashboard based on black dashboard UI template",
   "author": "cristian.jora <joracristi@gmail.com>",
   "scripts": {

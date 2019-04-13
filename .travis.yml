@@ -1,29 +1,28 @@
+dist: trusty
 language: node_js
-cache: npm
 node_js:
-- "9.9.0"
-- "node"
+- "stable"
 before_install:
 - npm i -g npm@6.9.0
-stages:
-- lint
-- test
-- build
+install:
+- npm install
 git:
   depth: 3
-jobs:
-  include:
-  - stage: lint
-    script:
-    # Run linter
-    - npm run lint
-  - stage: test
-    script:
-    # Run tests
-    - npm run test
-  - stage: build
-    script:
-    # Build all
-    - npm run build:docs
-    - npm run build:system
-    - npm run build:app
+cache:
+  directories:
+  - node_modules
+script:
+- npm run build
+- sonar-scanner
+
+addons:
+  sonarcloud:
+    organization: "croxx219-github" #
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: master
