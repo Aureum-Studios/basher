@@ -5,6 +5,8 @@ node_js:
 - "node"
 before_install:
 - npm i -g npm@6.9.0
+install:
+- npm install
 stages:
 - lint
 - test
