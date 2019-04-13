@@ -1,9 +1,14 @@
 language: node_js
 cache: npm
+node_js:
+- "9.9.0"
+- "node"
 stages:
 - lint
 - test
 - build
+git:
+  depth: 3
 jobs:
   include:
   - stage: lint
