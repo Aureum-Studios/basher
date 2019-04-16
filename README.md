@@ -1,4 +1,4 @@
-![MADE WITH](https://img.shields.io/static/v1.svg?labelColor=important&color=critical&label=MADE%20WITH&message=JAVA&logo=java&logoColor=black&style=for-the-badge&cacheSeconds=33600)  
+![MADE WITH](https://img.shields.io/static/v1.svg?labelColor=important&color=critical&label=MADE%20WITH&message=VUE&logo=vue.js&logoColor=black&style=for-the-badge&cacheSeconds=33600)  
 ![Travis (.com) branch](https://img.shields.io/travis/com/croxx219/basher/basher-vue.svg?logo=travis&style=popout)  
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=croxx219-github&metric=alert_status)](https://sonarcloud.io/dashboard?id=croxx219-github)  
 

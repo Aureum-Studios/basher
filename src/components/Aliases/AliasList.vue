@@ -3,7 +3,7 @@
               thead-classes="text-primary">
     <template slot-scope="{row}">
       <td>
-        <base-input addon-left-icon="tim-icons icon-notes" placeholder="Alias name">
+        <base-input class="mb-0" addon-left-icon="tim-icons icon-notes" placeholder="Alias name">
         </base-input>
       </td>
       <td>
