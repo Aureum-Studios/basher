@@ -3,7 +3,7 @@
     <div class="col-lg-6 col-md-12">
       <card type="tasks" :header-classes="'text-left'" :footerClasses="'text-right'">
         <template slot="header">
-          <h6 class="title d-inline">{{$t('bashPrompt.aliases', {count: 5})}}</h6>
+          <h6 class="title d-inline">{{$t('bashPrompt.aliases', {count: aliases.length})}}</h6>
           <base-dropdown menu-on-right=""
                          tag="div"
                          title-classes="btn btn-link btn-icon"
@@ -16,9 +16,9 @@
           </base-dropdown>
         </template>
         <div class="table-full-width table-responsive">
-          <alias-list></alias-list>
+          <alias-list :aliases="aliases"></alias-list>
         </div>
-        <base-button round icon type="success">
+        <base-button round @click="addAlias" icon type="success">
           <i style="color: black" class="tim-icons icon-simple-add"></i>
         </base-button>
       </card>
@@ -42,6 +42,28 @@
   export default {
     components: {
       AliasList
+    },
+    props: {
+      aliases: {
+        type: Array,
+        default: function () {
+          return ["Alias"]
+        }
+      }
+    },
+    data() {
+      return {
+        aliasListKey: 0,
+      };
+    },
+    methods: {
+      addAlias() {
+        this.aliases.push("Another Alias");
+        this.forceRerender();
+      },
+      forceRerender() {
+        this.aliasListKey += 1;
+      }
     }
   };
 </script>

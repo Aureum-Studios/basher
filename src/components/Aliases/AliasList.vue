@@ -1,5 +1,5 @@
 <template>
-  <base-table :data="tableData"
+  <base-table :data="aliases"
               thead-classes="text-primary">
     <template slot-scope="{row}">
       <td>
@@ -11,10 +11,10 @@
         </base-input>
       </td>
       <td class="td-actions text-right">
-        <base-button type="link" aria-label="remove button">
+        <base-button type="link" @click="removeAlias" aria-label="remove button">
           <!-- TODO: Remove hard coded hex value -->
-          <!-- TODO: Add hover logic -->
-          <i style="color: var(--danger)" class="tim-icons icon-simple-remove"></i>
+          <!-- TODO: Add red color without fucking the hover-->
+          <i class="tim-icons icon-simple-remove"></i>
         </base-button>
       </td>
     </template>
@@ -25,13 +25,20 @@
 
   export default {
     name: 'alias-list',
+    props: {
+      aliases: {
+        type: Array,
+        default: function () {
+          return []
+        }
+      }
+    },
     components: {
       BaseTable
     },
-    //TODO: Return alias name and such using $t
-    computed: {
-      tableData() {
-        return this.$t('bashPrompt.taskList');
+    methods: {
+      removeAlias() {
+        this.aliases.pop();
       }
     }
   }
