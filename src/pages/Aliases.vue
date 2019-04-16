@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-lg-6 col-md-12">
-      <card type="tasks" :header-classes="'text-left'" :footerClasses="'text-right'">
+      <card type="alias" :header-classes="'text-left'" :footerClasses="'text-right'">
         <template slot="header">
           <h6 class="title d-inline">{{$t('bashPrompt.aliases', {count: aliases.length})}}</h6>
           <base-dropdown menu-on-right=""
@@ -23,15 +23,14 @@
         </base-button>
       </card>
     </div>
-    <div class="col-lg-6 col-md-12">
+    <div class="col-lg-6 col-md-12 ">
       <card type="nav-tabs">
         <div slot="header" class="card-header-success">
           Quote
         </div>
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
+        <div class="raw-code language-html">
+          <pre class="language-html">Some code here</pre>
+        </div>
       </card>
     </div>
   </div>
@@ -68,4 +67,9 @@
   };
 </script>
 <style>
+  div[class*=language-] {
+    position: relative;
+    background-color: #282c34;
+    border-radius: 6px;
+  }
 </style>

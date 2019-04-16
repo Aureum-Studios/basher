@@ -1,0 +1,29 @@
+.card-alias {
+
+  .table-full-width {
+    max-height: 410px;
+    position: relative;
+  }
+
+  .card-header {
+    .title {
+      margin-right: 20px;
+      font-weight: $font-weight-normal;
+    }
+
+    .dropdown {
+      float: right;
+      color: darken($white, 20%);
+    }
+  }
+
+  .card-body {
+    i {
+      color: lighten($danger,10%);
+      font-size: 1.4em;
+      &:hover {
+        color: darken($danger,5%);
+      }
+    }
+  }
+}

@@ -12,8 +12,6 @@
       </td>
       <td class="td-actions text-right">
         <base-button type="link" @click="removeAlias" aria-label="remove button">
-          <!-- TODO: Remove hard coded hex value -->
-          <!-- TODO: Add red color without fucking the hover-->
           <i class="tim-icons icon-simple-remove"></i>
         </base-button>
       </td>
